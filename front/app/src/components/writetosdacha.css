@@ -1,0 +1,58 @@
+.blockWithsdacha{
+    display: flex;
+    justify-content: center;
+}
+
+.blocksdacha{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+border-radius: 5px;
+width: 90%; /* Занимает 80% ширины родительского элемента */
+padding: 20px 0; /* Отступы по 10% слева и справа */
+height: auto; /* Высота зависит от содержимого */
+}
+.wordslot{
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+.slotBig{
+    align-items: center;
+    margin: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.5s;
+    display: block;
+}
+.slot{
+align-items: center;
+    display: flex;
+
+}
+
+.slotName{
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 5px;
+    margin-right: 25px;
+    transition: 0.5s;
+}
+.slotName:hover{
+    font-weight:lighter;
+}
+.UserName{
+    margin-right: 25px;
+}
+
+.timeInfo{
+    margin-top: 10px;
+    margin-left: 5px;
+    color: grey;
+}
+.dur{
+    margin-bottom: 5px;
+}
+.startTime{
+    color: black;
+    font-size: 22px;
+}

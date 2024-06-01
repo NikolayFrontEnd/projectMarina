@@ -1,0 +1,57 @@
+.SubjectContainer {
+    display: flex;
+    justify-content: center;
+
+}
+.SubjectBlock{
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+border-radius: 5px;
+width: 90%; /* Занимает 80% ширины родительского элемента */
+padding: 20px 0; /* Отступы по 10% слева и справа */
+height: auto; /* Высота зависит от содержимого */
+}
+.NameSubject{
+    display: flex;
+justify-content: center;
+    font-size: 36px;
+    font-weight: bold;
+}
+.NameSubject2{
+    display: flex;
+justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.queue{
+    margin: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    border-radius: 5px;
+}
+.timeDuration{
+    color: grey;
+    margin-bottom: 10px;
+    margin-left: 40px;
+}
+.countPlaces{
+    color: grey;
+    margin-bottom: 30px;
+    margin-left: 40px;
+}
+.btnCreate{
+    margin-left: 30px;
+}
+.timeDuration2{
+    color: grey;
+    margin-top: 30px;
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+.quest{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+}

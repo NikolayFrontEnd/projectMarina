@@ -1,0 +1,22 @@
+# Node modules
+**/node_modules
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+
+# Build directories
+dist/
+build/
+
+# Other files
+.DS_Store
+*.pem
+*.key
+*.crt

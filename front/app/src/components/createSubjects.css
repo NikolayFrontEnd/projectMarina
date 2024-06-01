@@ -1,0 +1,137 @@
+
+.subjects-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff; /* Белый */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.subject {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f0f0f0; /* Светло-серый */
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.subject:hover{
+    background-color: #bbbbbb;
+    transition: 0.5s;
+}
+.navlin{
+    text-decoration: none;
+    color: black;
+}
+.subject span {
+    margin-right: 10px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff; /* Белый */
+}
+
+.primary {
+    background-color: #007bff; /* Голубой */
+}
+.primary2{
+    background-color: #007bff;
+margin-left: 650px;
+margin-top: 20px;
+}
+.primary5{
+background-color:#dc3545 ;
+}
+.out{
+    background-color: #de3232;
+}
+.button:hover {
+    opacity: 0.8;
+}
+
+.delete-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #dc3545; /* Красный */
+    color: #fff; /* Белый */
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+    background-color: #c82333; /* Темно-красный */
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f0f8ff; /* Голубой */
+    border-radius: 20px; /* Овальные углы */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333; /* Черный */
+}
+
+.input-container {
+    margin: 20px;
+
+}
+
+.input-container label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333; /* Черный */
+}
+
+.input-container input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px; /* Овальные углы */
+    background-color: #fff; /* Белый */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.input-container input:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.7); /* Голубой */
+}
+
+.submit-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff; /* Голубой */
+    border: none;
+    border-radius: 4px;
+    color: #fff; /* Белый */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #0056b3; /* Темно-голубой */
+}
+.Words{
+    margin-bottom: 10px;
+}

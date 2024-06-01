@@ -1,0 +1,287 @@
+.header {
+  margin-bottom: 20px;
+    background-color: #f0faff;
+    color: #333;
+    padding: 20px;
+    display: flex; /* Используем flexbox для выравнивания элементов */
+    align-items: center; /* Центрируем элементы по вертикали */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    justify-content: space-between; /* Распределяем пространство между элементами */
+  }
+  
+  .namePositionContainer {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Отступ между кнопкой и именем */
+  }
+  
+  .name {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  .position {
+    font-size: 1em;
+    color: #555;
+  }
+  
+  .btn2 {
+    margin-top: 60px;
+    margin-left: auto; /* Автоматический отступ слева */
+    margin-right: auto;
+    margin-bottom: 100px;
+    align-items: center;
+    appearance: none;
+    background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+    border: 0;
+    border-radius: 6px;
+    box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-family: "JetBrains Mono",monospace;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: 18px;
+  }
+  
+  .btn2:focus {
+    box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  }
+  
+  .btn2:hover {
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+    transform: translateY(-2px);
+  }
+  
+  .btn2:active {
+    box-shadow: #3c4fe0 0 3px 7px inset;
+    transform: translateY(2px);
+  }
+
+  .btn3 {
+    align-items: center;
+    appearance: none;
+    background-image: radial-gradient(100% 100% at 100% 0, #f07e7e 0, #de3232 100%);
+    border: 0;
+    border-radius: 6px;
+    box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono",monospace;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: 18px;
+  }
+  
+  .btn3:focus {
+    box-shadow: #e34a4a 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #e34a4a 0 -3px 0 inset;
+  }
+  
+  .btn3:hover {
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #e34a4a 0 -3px 0 inset;
+    transform: translateY(-2px);
+  }
+  
+  .btn2:active {
+    box-shadow: #e34a4a 0 3px 7px inset;
+    transform: translateY(2px);
+  }
+
+/* styles.module.css */
+
+  
+.cardGrid {
+    margin-left: 20px;
+    margin-right: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    position: relative; /* Добавлено */
+  }
+  
+
+  
+ /*  .card {
+    background-color: #fff;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.3);
+    height: 300px;
+   
+   width: 300px;
+    overflow: hidden;
+    position: relative; 
+
+  } */
+  
+  .card {
+    background-color: #fff;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.3);
+    height: 300px;
+    width: 300px; /* изменено на процентное значение */
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .transition {
+    transition: .3s cubic-bezier(.3, 0, 0, 1.3);
+  }
+
+  .card:hover {
+    height: 450px;
+  }
+  
+  .card:hover .ctaContainer {
+    display: inline;
+    margin-top: 380px;
+  }
+  
+  .card:hover .cardCircle {
+    background-size: cover;
+    border-radius: 0;
+    margin-top: -130px;
+  }
+  
+  .card:hover h2 {
+    background: #3487f7;
+    color: #fff;
+    margin-top: 100px;
+    padding: 5px;
+  }
+  
+  .card:hover h2 small {
+    color: #fff;
+  }
+  
+  .card:hover p {
+    margin-top: 300px;
+  }
+  
+  .cardCircle {
+    background-color: #3487f7;
+    background-size: cover;
+    border-radius: 50%;
+    height: 400px;
+    margin-left: -75px;
+    margin-top: -270px;
+    position: absolute;
+    width: 450px;
+  }
+  
+  h2 {
+    color: #3487f7;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: 200;
+    margin-top: 150px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 9999;
+  }
+  
+  p {
+    color: rgba(0,0,0,.6);
+    font-family: 'Raleway', sans-serif;
+    font-size: 100%;
+    font-weight: normal;
+    margin-top: 200px;
+    position: absolute;
+    text-align: center;
+    z-index: 9999;
+  }
+  
+  .ctaContainer {
+    display: none;
+    margin-top: 320px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 9999;
+  }
+  
+  .cta {
+    -moz-border-radius: 2px;
+    -moz-transition: 0.2s ease-out;
+    -ms-transition: 0.2s ease-out;
+    -o-transition: 0.2s ease-out;
+    -webkit-border-radius: 2px;
+    -webkit-transition: 0.2s ease-out;
+    background-clip: padding-box;
+    border: 2px solid #3487f7;
+    border-radius: 2px;
+    color: #3487f7;
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    height: 36px;
+    letter-spacing: 0.5px;
+    line-height: 36px;
+    margin-bottom: 15px;
+    padding: 0 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.2s ease-out;
+  }
+  
+  .cta:hover {
+    background-color: #3487f7;
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: #fff;
+    -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .link{ 
+    text-decoration: none;
+  }
+/*   .card {
+    cursor: pointer;
+    background-color: #f0faff;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px) scale(1.05);
+  } */
+
+
+
+  .bt{
+    margin-top: 180px;
+    display: flex;
+    justify-content: center;
+  }
