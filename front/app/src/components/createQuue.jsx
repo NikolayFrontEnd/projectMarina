@@ -12,6 +12,9 @@ const [duration, setDuration] = useState('');
 const navigate = useNavigate();
 const handleSubmit = async (e) => {
     e.preventDefault();
+    if(duration != 0){   
+
+    
     const start = new Date(`01/01/1970 ${time}`);
     const end = new Date(`01/01/1970 ${time2}`);
     const difference = end - start;
@@ -52,6 +55,10 @@ const handleSubmit = async (e) => {
       console.error("Ошибка при создании очереди:", error);
       alert('Не удалось создать очередь!');
     }
+  }
+  else{
+    alert("Продолжительность должна быть минимум 1 минуту!")
+  }
   };
     return(<>
     <Header/>
@@ -91,8 +98,8 @@ const handleSubmit = async (e) => {
                     id="duration"
                     type="number"
                     placeholder="Введите продолжительность слота"
-value = {duration}
-onChange={(e)=>setDuration(e.target.value)}
+                    value = {duration}
+                    onChange={(e)=>setDuration(e.target.value)}
                 />
             </div>
             <button className="submit-button" type="submit">Добавить очередь</button>  
